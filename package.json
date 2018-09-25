@@ -1,0 +1,19 @@
+{
+  "name": "marketplace-server-goit",
+  "version": "1.0.0",
+  "description": "GoIT Node Practice Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeyplaski/marketplace-server-goit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeyplaski/marketplace-server-goit/issues"
+  },
+  "homepage": "https://github.com/sergeyplaski/marketplace-server-goit#readme"
+}
