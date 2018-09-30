@@ -4,6 +4,9 @@
   "description": "GoIT Node Practice Project",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
+    "debug": "node --inspect index.js",
+    "run": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/sergeyplaski/marketplace-server-goit/issues"
   },
-  "homepage": "https://github.com/sergeyplaski/marketplace-server-goit#readme"
+  "homepage": "https://github.com/sergeyplaski/marketplace-server-goit#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
 }
