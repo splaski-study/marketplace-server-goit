@@ -8,14 +8,16 @@ const logger = morgan('combined');
 
 const startServer = port => {
 
-    console.log('__filename: ', __filename);
-
+    // console.log('__filename: ', __filename);
     const server = http.createServer((request, response) => {
         // Get route from the request
         const parsedUrl = url.parse(request.url);
 
         // Get router function
-        const func = parsedUrl.pathname.includes('/product/')
+        console.log('pathname=', parsedUrl.pathname);
+        const func = parsedUrl.pathname.includes('/product/create')
+            ? router["/product/create"]
+            : parsedUrl.pathname.includes('/product/')
             ? router["/product"]
             : (router[parsedUrl.pathname] || router.default);
 
